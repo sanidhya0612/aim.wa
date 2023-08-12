@@ -1,0 +1,23 @@
+#body{
+    background-size: cover;
+}
+
+#division
+{
+    position: fixed;
+    width: 100%;
+    margin-top: -12px;
+
+}
+
+.note
+{
+    color: black;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+canvas{
+    border: 2px dotted;
+}
+
