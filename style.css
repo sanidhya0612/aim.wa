@@ -18,6 +18,8 @@
 }
 
 canvas{
-    border: 2px dotted;
+    border: 2px dotted orangered;
+    margin-top: -30px;
+
 }
 
