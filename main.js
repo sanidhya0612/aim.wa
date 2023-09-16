@@ -53,7 +53,6 @@ function gotPoses(results)
 function draw()
 {
     image(video, 0, 0, 600, 500,);
-
     
     fill("orange");
     stroke("orangered");
@@ -63,20 +62,32 @@ function draw()
         circle(leftWristX,leftWristY,20); 
         songb.stop();
     
-        if(songa == true)
+        if(songa == false)
         {
             document.getElementById("song_name").innerHTML = "Song is "+ songa;
             song.rate(0.5);
+            songa.play();
         }
         else
         {
             songa.stop();
         }
     }
-}
-
-function play()
-{
-    songa.play();
-    songb.play();
-}
+//end//
+    if(scoreRightWrist >0.2)
+    {
+        circle(leftWristX,leftWristY,20); 
+        songa.stop();
+    
+        if(songb == false)
+        {
+            document.getElementById("song_name").innerHTML = "Song is "+ songb;
+            song.rate(0.5);
+            songb.play();
+        }
+        else
+        {
+            songb.stop();
+        }
+    }
+    }
